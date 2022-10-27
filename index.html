@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animal Planet</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="../bootstrap/4.0.0/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../bootstrap/4.0.0/popper.min.js"></script>
+<style type="text/css">
+  #u098{
+    background-image: url('foto/1234.png');
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #666666;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    z-index: 1;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .active{
+    background-color: #3366cc;
+    color: white;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #3366cc;
+    color: white;
+}
+input[type=text] {
+     width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    background-image: url('foto/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+img.max{
+  width: 45px;
+  height: 45px;
+  transition: width 1s, height 1s;
+}
+img.max:hover{
+  width: 60px;
+  height: 60px;
+}
+h3{
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+</style>
+</head>
+<body>
+
+	<div class="container-fluid" id="u098" style="background-color: gray; height: 250px; border-radius: 4px;" >
+    <div class="container" style=" margin: 0px 90px 0px 90px; border-radius: 4px; height: 10px;">
+      <nav class="navbar navbar-expand-sm bg-light" style="border-radius: 4px;">
+  <ul class="navbar-nav">
+    <li class="nav-item"> <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Animal Organization" href="#">Animal Organization</a> </li>
+    <li class="nav-item"> <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Send massage" href="#"> Send massage</a>  </li>
+    <li class="nav-item"> <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="questions" href="#">Most popular questions</a> </li>
+    <li class="nav-item"> <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Vacansy" href="#">Vacansy</a> </li>
+    <li class="nav-item"> <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Useful" href="#"> Useful</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#"> &#8194</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#"> &#8194</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#"> &#8194</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#"> &#8194</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#"> &#8194</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#"> &#8194</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#"> &#8194</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#"> &#8194</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#"> &#8194</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#"> &#8194</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#"> &#8194</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#"> &#8194</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#"> &#8194</a> </li>
+  </ul>
+  <ul class="nav navbar-nav  navbar-right ">
+    <li><a class="nav-link" href="#"> Uz </a></li>
+    <li><a class="nav-link" href="#"> Ru </a></li>
+    <li><a class="nav-link" href="#"> En </a></li>
+  </ul>
+</nav>
+    </div>
+  </div>
+
+<div class="topnav" style="background-color: #85a3e0; width: 1350px;" >
+  <a href="animal.html" ><img src="logo/animal-logo111.png" alt="logo" style="width:35px;"></a>
+  <a href="#" class="active"><i class="fa fa-home" title="home"> Home </i></a>
+  <a href="add.html"><i class="fa fa-list-alt" title="News">News</i></a>
+  <a href="#"><i class="fa fa-image" title="Photos">Photos</i> </a>
+  <a href="#"><i class="fa fa-file-word-o" title="Documents">Documents</i> </a>
+  <a href="#"><i class="fa fa-users" title="Profile">Profile</i> </a>
+  <a href="#"><i class="fa fa-sticky-note" title="about">About</i> </a>
+  <a href="#"><i class="fa fa-server" title="Others">Others</i> </a>
+  <a href="log-in.html" style="float:right" title="Login"><i class="fa fa-long-arrow-right">Log in</i> </a>
+  <a href="new-login.html" style="float:right" title="Login"><i class="fa fa-user">Register</i> </a>
+  </div>
+  <div class="container-fluid">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+    <li data-target="#demo" data-slide-to="5"></li>
+    <li data-target="#demo" data-slide-to="6"></li>
+    <li data-target="#demo" data-slide-to="7"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="foto/1.jpg" alt="Los Angeles" width="1360" height="600">
+      <div class="carousel-caption">
+    <h3>Life is beautiful with animals</h3>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="foto/2.jpg" alt="Chicago" width="1360" height="600">
+      <div class="carousel-caption">
+    <h3>Althought, they can not say nothing</h3>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="foto/3.jpg" alt="New York" width="1360" height="600">
+      <div class="carousel-caption">
+    <h3>They can give us huge emotion and love</h3>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="foto/4.jpg" alt="New York" width="1360" height="600">
+      <div class="carousel-caption">
+    <h3>Animals can care about our life</h3>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="foto/5.jpg" alt="Los Angeles" width="1360" height="600">
+      <div class="carousel-caption">
+    <h3>With their action we feel ourselves as happy</h3>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="foto/6.jpg" alt="Chicago" width="1360" height="600">
+      <div class="carousel-caption">
+    <h3>Therefor, try to keep animal planet</h3>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="foto/7.jpg" alt="New York" width="1360" height="600">
+      <div class="carousel-caption">
+    <h3>Join us and follow us</h3>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="foto/8.jpg" alt="New York" width="1360" height="600">
+      <div class="carousel-caption">
+    <h3>Together we can do everything!</h3>
+  </div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 ">
+      <h2><center>Animal world in earth</center></h2> <br>
+
+      <div class="card" style="width:900px; margin: 0px 10px 0px 90px">
+  <img class="card-img-top" src="foto/11.jpg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title"><center>World with Animals</center></h4>
+    <p class="card-text">Issues related to animal experimentation are frequently discussed these days, particularly in the 
+media. It is often said that animals should not be used in testing because it is cruel and 
+unnecessary.  This essay will examine the arguments for and against animal testing.  
+On the one hand, the people who support these experiments say that we must do tests on 
+animals..</p>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Read more
+  </button>
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h3 class="modal-title" style="margin-left:260px; "><center> World with Animals </center></h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <img class="img-thumbnail" src="foto/11.jpg" alt="Olmaxon" width="800" height="600">
+          <br>
+          <p style="word-break: keep-all;">
+            Issues related to animal experimentation are frequently discussed these days, particularly in the 
+media. It is often said that animals should not be used in testing because it is cruel and 
+unnecessary.  This essay will examine the arguments for and against animal testing.  
+On the one hand, the people who support these experiments say that we must do tests on 
+animals.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    <p class="text-right" style="display: inline;">
+      <span class="badge badge-danger " style="float: right;"><i class="fa fa-thumbs-o-down"> Dislike</i></span>
+      <span class="badge badge-success " style="float: right;"><i class="fa fa-thumbs-o-up"> Like</i></span> 
+    </p>
+  </div>
+</div>
+      <br>
+      <div class="card" style="width:900px; margin: 0px 10px 0px 90px">
+  <img class="card-img-top" src="foto/15.jpg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Try to keep animal life</h4>
+    <p class="card-text">New cosmetics, which could be tested on humans instead.  Another issue is that sometimes an 
+experiment on animals gives us the wrong result because animals’ bodies are not exactly the 
+same as our own. As a consequence, this testing may not be providing the safety that its 
+proponents claim.</p>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModall">
+    Read more
+  </button>
+  <div class="modal fade" id="myModall">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title" style="margin-left: 260px;"><center> Try to keep animal life </center></h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <img class="img-thumbnail" src="foto/15.jpg" alt="Olmaxon" width="800" height="600">
+          <br>
+          <p style="word-break: keep-all;">
+            New cosmetics, which could be tested on humans instead.  Another issue is that sometimes an 
+experiment on animals gives us the wrong result because animals’ bodies are not exactly the 
+same as our own. As a consequence, this testing may not be providing the safety that its 
+proponents claim.
+          </p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    <p class="text-right" style="display: inline;">
+      <span class="badge badge-danger " style="float: right;"><i class="fa fa-thumbs-o-down"> Dislike</i></span>
+      <span class="badge badge-success " style="float: right;"><i class="fa fa-thumbs-o-up"> Like</i></span> 
+    </p>
+  </div>
+</div>
+    </div> <br>
+    <div class="col-md-2 bg-light">
+      <label id="mmm">
+        <input type="text" name="search" maxlength="12" placeholder="Search"></label>
+       <center> <a href="#" class="btn btn-info" role="button">Search</a></center> 
+      <h3><center> Usefull Links</center></h3>
+      <h4> <ul type="circle">
+        <li>Keep Animals</li>
+        <li>Save Organization</li>
+        <li>Work done</li>
+        <li>All plans</li>
+        <li>Overall Result</li>
+      </ul></h4> 
+      <br>
+      <button type="button"  class="btn btn-info ml-5" onclick="document.getElementById('demo').innerHTML = Date()">Show time</button>
+
+<p id="demo"></p>
+      <h3><center> Photos</center></h3>
+        <div class="img-thumbnail">
+        <a href="foto/10.jpg" target="_blank">
+          <img src="foto/10.jpg" alt="Lights" style="width:100%">
+        </a>
+      </div>
+      <br>
+      <div class="img-thumbnail">
+        <a href="foto/11.jpg" target="_blank">
+          <img src="foto/11.jpg" alt="Lights" style="width:100%">
+        </a>
+      </div>
+      <br>
+      <div class="img-thumbnail">
+        <a href="foto/14.jpg" target="_blank">
+          <img src="foto/14.jpg" alt="Lights" style="width:100%">
+        </a>
+      </div>
+      <br>
+      <div class="img-thumbnail">
+        <a href="foto/16.jpg" target="_blank">
+          <img src="foto/16.jpg" alt="Lights" style="width:100%">
+        </a></div> <br>
+        <div class="img-thumbnail">
+        <a href="foto/15.jpg" target="_blank">
+          <img src="foto/15.jpg" alt="Lights" style="width:100%">
+        </a></div> <br>
+        <div class="thumbnail">
+        <a href="foto/12.jpg" target="_blank">
+          <img src="foto/12.jpg" alt="Lights" style="width:100%">
+        </a></div> <br>
+        <div class="img-thumbnail">
+        <a href="foto/13.jpg" target="_blank">
+          <img src="foto/13.jpg" alt="Lights" style="width:100%">
+        </a> </div> <br>
+        <div class="img-thumbnail">
+        <a href="foto/18.jpg" target="_blank">
+          <img src="foto/18.jpg" alt="Lights" style="width:100%">
+        </a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-light">
+  <div class="row">
+    <div class="col-md-4"><i style="color: blue; font-size: 20px;" class="fa fa-address-card-o">Adress</i>
+      <p>Tashkent city,Uzbekistan</p>
+      <i class="fa fa-phone" style="color: blue; font-size: 20px;"> Contack</i>
+      <p>+998(97) 734-17-75</p></div>
+    <div class="col-md-4">
+      <i class="fa fa-users" style="color: blue; font-size: 20px;">Users</i>
+      <p>Number of visitors: 2000</p>
+      <i class="fa fa-envelope" style="color: blue; font-size: 20px;">E-mail</i>
+     <p>mahmudjon2127@gmail.com</p>
+    </div>
+    <div class="col-md-4" >
+      <center><h3>Follow Us in social media</h3></center>
+      <div style="margin: 0px 10px 0px 80px">
+      <a href="http://intagram.com"><img src="brend/insta.png" style="float:left;" class="max"></a>
+      <a href="http://youtube.com"><img src="brend/youtube.png" style="float:left;" class="max" >
+      <a href="http://telegram.com"><img src="brend/telegram.png" style="float:left;" class="max" >
+      <a href="http://twitter.com"><img src="brend/twiter.png" style="float:left;" class="max" >
+      <a href="http://ok.ru"><img src="brend/odno.png" style="float:left;" class="max" >
+        </div>
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+<script type="text/javascript" src="../bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
